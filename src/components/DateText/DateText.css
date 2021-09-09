@@ -1,0 +1,14 @@
+.date {
+  font-size: 15px;
+}
+
+.date h1 {
+  margin-bottom: 0;
+}
+
+.date div {
+  color: #989eaa;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: right;
+}
