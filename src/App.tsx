@@ -1,30 +1,35 @@
-import format from "date-fns/format";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { WordDefinition, wordListUrl } from "./utils/wordList";
+import getDayOfYear from "date-fns/getDayOfYear";
+import axios from "axios";
+import { MainView } from "./components/MainView/MainView";
+import { ReviewView } from "./components/ReviewView/ReviewView";
 import "./App.css";
-import { AddBtn } from "./components/AddBtn/AddBtn";
-import { DateText } from "./components/DateText/DateText";
-import {
-  WordCard,
-  Props as WordDefinition,
-} from "./components/WordCard/WordCard";
-import { wordList } from "./utils/WordList";
 
 function App() {
-  const [wotd, setWotd] = useState<WordDefinition>(wordList[1]);
+  const [arrayObjWord, setArrayObjWord] = useState<WordDefinition[]>([]);
+  useEffect(() => {
+    axios
+      .get<WordDefinition[]>(wordListUrl)
+      .then((response) => response["data"])
+      .then(setArrayObjWord);
+  }, []);
+  console.log(arrayObjWord);
 
+  const [reviewing, setReviewing] = useState(false);
   return (
-    <div className="body">
-      <div className="frame">
-        <div className="header">
-          <p className="title">
-            word <br /> of the <br /> day.
-          </p>
-          <DateText />
-        </div>
-        <WordCard {...wotd} />
-
-        <AddBtn onClick={() => setWotd(wordList[2])} />
-      </div>
+    <div>
+      {!reviewing ? (
+        <MainView
+          onReviewToggle={() => setReviewing(true)}
+          wordList={arrayObjWord}
+        />
+      ) : (
+        <ReviewView
+          wordList={arrayObjWord}
+          onClick={() => setReviewing(false)}
+        />
+      )}
     </div>
   );
 }

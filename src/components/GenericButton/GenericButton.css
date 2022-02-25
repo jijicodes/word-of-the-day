@@ -1,12 +1,12 @@
-button {
+button.genericButton {
   background-color: rgb(251, 194, 18);
   padding: 10px;
   align-self: center;
   font-weight: bold;
   color: #101820ff;
-  width: 30%;
+  width: 200px;
   border: none;
   cursor: pointer;
-  margin-top: 30px;
-  margin-bottom: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

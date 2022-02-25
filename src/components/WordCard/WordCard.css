@@ -43,3 +43,9 @@
   left: 25%;
   top: 0;
 }
+
+.audioButton {
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+}

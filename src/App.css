@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Glory&display=swap");
+
 .App {
   text-align: center;
 }
@@ -39,6 +41,15 @@
 
 body {
   background-color: rgb(251, 194, 18);
+  font-family: "Glory", sans-serif;
+}
+
+.frame {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(235, 235, 235);
+  margin: 20px 60px;
+  padding: 20px 40px;
 }
 
 /* body p {
@@ -50,24 +61,3 @@ body {
   margin: 0;
   padding: 0;
 } */
-
-.frame {
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(235, 235, 235);
-  margin: 20px 60px;
-  padding: 20px 40px;
-}
-
-.header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.title {
-  color: #989eaa;
-  font-size: 20px;
-  font-weight: bold;
-}
