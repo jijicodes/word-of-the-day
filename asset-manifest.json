@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/word-of-the-day/static/css/main.09febbb2.chunk.css",
-    "main.js": "/word-of-the-day/static/js/main.4643074a.chunk.js",
-    "main.js.map": "/word-of-the-day/static/js/main.4643074a.chunk.js.map",
+    "main.css": "/word-of-the-day/static/css/main.e020f81c.chunk.css",
+    "main.js": "/word-of-the-day/static/js/main.c274f622.chunk.js",
+    "main.js.map": "/word-of-the-day/static/js/main.c274f622.chunk.js.map",
     "runtime-main.js": "/word-of-the-day/static/js/runtime-main.c5eff7fc.js",
     "runtime-main.js.map": "/word-of-the-day/static/js/runtime-main.c5eff7fc.js.map",
-    "static/js/2.60b0b2ae.chunk.js": "/word-of-the-day/static/js/2.60b0b2ae.chunk.js",
-    "static/js/2.60b0b2ae.chunk.js.map": "/word-of-the-day/static/js/2.60b0b2ae.chunk.js.map",
+    "static/js/2.18e52b56.chunk.js": "/word-of-the-day/static/js/2.18e52b56.chunk.js",
+    "static/js/2.18e52b56.chunk.js.map": "/word-of-the-day/static/js/2.18e52b56.chunk.js.map",
     "static/js/3.47e4dc6b.chunk.js": "/word-of-the-day/static/js/3.47e4dc6b.chunk.js",
     "static/js/3.47e4dc6b.chunk.js.map": "/word-of-the-day/static/js/3.47e4dc6b.chunk.js.map",
     "index.html": "/word-of-the-day/index.html",
-    "static/css/main.09febbb2.chunk.css.map": "/word-of-the-day/static/css/main.09febbb2.chunk.css.map",
-    "static/js/2.60b0b2ae.chunk.js.LICENSE.txt": "/word-of-the-day/static/js/2.60b0b2ae.chunk.js.LICENSE.txt"
+    "static/css/main.e020f81c.chunk.css.map": "/word-of-the-day/static/css/main.e020f81c.chunk.css.map",
+    "static/js/2.18e52b56.chunk.js.LICENSE.txt": "/word-of-the-day/static/js/2.18e52b56.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c5eff7fc.js",
-    "static/js/2.60b0b2ae.chunk.js",
-    "static/css/main.09febbb2.chunk.css",
-    "static/js/main.4643074a.chunk.js"
+    "static/js/2.18e52b56.chunk.js",
+    "static/css/main.e020f81c.chunk.css",
+    "static/js/main.c274f622.chunk.js"
   ]
 }
