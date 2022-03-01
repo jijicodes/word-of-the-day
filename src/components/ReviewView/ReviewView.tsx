@@ -24,12 +24,13 @@ export const ReviewView: FC<Props> = ({ wordList, onClick }) => {
       </div>
       <div className="wordListItem">
         <table>
-          {wordList.map((list) => (
+          {wordList.map((word) => (
             <WordListItem
-              key={list.phrase}
-              phrase={list.phrase}
-              definition={list.definition}
-              starred={list.starred}
+              key={word.phrase}
+              phrase={word.phrase}
+              definition={word.definition}
+              starred={word.starred}
+              audioUrl={word.audioUrl}
               onStarToggle={() => setStarred(starred)}
             />
           ))}

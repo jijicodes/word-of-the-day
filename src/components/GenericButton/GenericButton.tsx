@@ -4,11 +4,12 @@ import "./GenericButton.css";
 interface Props {
   onPress: () => void;
   label: string | ReactNode;
+  disabled?: boolean;
 }
 
-export const GenericButton: FC<Props> = ({ onPress, label }) => {
+export const GenericButton: FC<Props> = ({ onPress, label, disabled }) => {
   return (
-    <button className="genericButton" onClick={onPress}>
+    <button className="genericButton" onClick={onPress} disabled={disabled}>
       {label}
     </button>
   );

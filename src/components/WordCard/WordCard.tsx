@@ -1,4 +1,5 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
+import { playAudio } from "../../utils/playAudio";
 import { WordDefinition } from "../../utils/wordList";
 import "./WordCard.css";
 
@@ -11,11 +12,19 @@ export const WordCard: FC<Props> = ({
   definition,
   audioUrl,
 }) => {
+  const [playing, setPlaying] = useState(false);
   return (
     <div className="wordCard">
       <h1>{phrase}</h1>
       <h3>
-        <button className="audioButton" onClick={() => audioUrl}>
+        <button
+          className="audioButton"
+          onClick={() => {
+            setPlaying(true);
+            playAudio(audioUrl).finally(() => setPlaying(false));
+          }}
+          disabled={playing}
+        >
           🗣️
         </button>{" "}
         [{pronunciation}]

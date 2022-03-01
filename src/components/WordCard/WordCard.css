@@ -24,6 +24,7 @@
 .wordCard h4 {
   text-align: center;
   font-size: 30px;
+
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -42,10 +43,4 @@
   border-top: solid black 5px;
   left: 25%;
   top: 0;
-}
-
-.audioButton {
-  border: none;
-  cursor: pointer;
-  font-size: 30px;
 }
